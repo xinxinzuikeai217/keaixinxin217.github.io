@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流星雨和烟花特效</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 第一个界面 -->
+    <div id="page1" class="page">
+        <canvas id="meteor-shower"></canvas>
+        <button id="start-button">请点击这里</button>
+        <audio id="bg-music1" loop>
+            <source src="assets/music1.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- 第二个界面 -->
+    <div id="page2" class="page hidden">
+        <canvas id="fireworks"></canvas>
+        <div id="heart-container">
+            <svg id="heart" viewBox="0 0 32 29.6">
+                <path d="M23.6,0C20.5,0,17.8,1.9,16,4.3C14.2,1.9,11.5,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.6,16,21.2,16,21.2
+                s16-11.6,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+        </div>
+        <button id="second-button" class="hidden">下一个一百天 我们还是我们</button>
+        <audio id="bg-music2" loop>
+            <source src="assets/music2.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- 第三个界面 -->
+    <div id="page3" class="page hidden">
+        <canvas id="ocean-canvas"></canvas>
+        <div id="welcome-text">欢迎来到小欣和小泽的猫猫城堡</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
